@@ -4844,7 +4844,7 @@ fi
 if test "${with_pthread_lib_path+set}" = set; then :
   withval=$with_pthread_lib_path; PTHREAD_LIBS="-L$withval -lpthread"
 else
-  PTHREAD_LIBS='-L/usr/lib -lpthread'
+  PTHREAD_LIBS='-lpthread'
 fi
 
 

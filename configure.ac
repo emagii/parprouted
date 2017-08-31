@@ -34,7 +34,7 @@ AC_TYPE_SIZE_T
 AC_ARG_WITH([pthread-lib-path],
   [AS_HELP_STRING([--with-pthread-lib-path], [location of the pthread libraries])],
   [PTHREAD_LIBS="-L$withval -lpthread"],
-  [PTHREAD_LIBS='-L/usr/lib -lpthread'])
+  [PTHREAD_LIBS='-lpthread'])
 AC_SUBST([PTHREAD_LIBS])
 
 # distribute additional compiler and linker flags among Makefiles
