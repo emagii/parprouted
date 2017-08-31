@@ -36,6 +36,7 @@
  * to resolving internet addresses.  Field names used correspond to
  * RFC 826.
  */
+#ifndef	__NETINET_IF_ETHER_H
 struct	ether_arp {
 	struct	arphdr ea_hdr;		/* fixed-size header */
 	u_int8_t arp_sha[ETH_ALEN];	/* sender hardware address */
@@ -48,6 +49,7 @@ struct	ether_arp {
 #define	arp_hln	ea_hdr.ar_hln
 #define	arp_pln	ea_hdr.ar_pln
 #define	arp_op	ea_hdr.ar_op
+#endif
 // ===============
 
 typedef struct _ether_arp_frame { 
