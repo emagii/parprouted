@@ -8,7 +8,7 @@ LIB_CFLAGS =
 # additional include paths necessary to compile the C++ library
 AM_CFLAGS = -I$(top_srcdir)/src/include $(LIB_CFLAGS) -Wall -O0 -g3 -fmessage-length=0  @AM_CFLAGS@
 
-parprouted_LDADD = $(DEPS_LIBS)
+parprouted_LDADD = $(DEPS_LIBS) $(PTHREAD_LIBS)
 
 bin_PROGRAMS = parprouted
 

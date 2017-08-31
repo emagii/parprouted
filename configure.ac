@@ -29,6 +29,14 @@ AC_CHECK_HEADERS([arpa/inet.h])
 # Checks for typedefs, structures, and compiler characteristics.
 AC_TYPE_SIZE_T
 
+######### pthread ################################################################
+# Get pthread library locations
+AC_ARG_WITH([pthread-lib-path],
+  [AS_HELP_STRING([--with-pthread-lib-path], [location of the pthread libraries])],
+  [PTHREAD_LIBS="-L$withval -lpthread"],
+  [PTHREAD_LIBS='-L/usr/lib -lpthread'])
+AC_SUBST([PTHREAD_LIBS])
+
 # distribute additional compiler and linker flags among Makefiles
 # --> set and change these variables instead of CXXFLAGS or LDFLAGS (for user only)
 AC_SUBST([AM_CFLAGS])
