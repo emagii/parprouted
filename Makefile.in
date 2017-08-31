@@ -99,7 +99,8 @@ PROGRAMS = $(bin_PROGRAMS)
 am__dirstamp = $(am__leading_dot)dirstamp
 am_parprouted_OBJECTS = src/arp.$(OBJEXT) src/parprouted.$(OBJEXT)
 parprouted_OBJECTS = $(am_parprouted_OBJECTS)
-parprouted_DEPENDENCIES =
+am__DEPENDENCIES_1 =
+parprouted_DEPENDENCIES = $(am__DEPENDENCIES_1)
 SCRIPTS = $(dist_noinst_SCRIPTS)
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
@@ -249,6 +250,7 @@ PACKAGE_TARNAME = @PACKAGE_TARNAME@
 PACKAGE_URL = @PACKAGE_URL@
 PACKAGE_VERSION = @PACKAGE_VERSION@
 PATH_SEPARATOR = @PATH_SEPARATOR@
+PTHREAD_LIBS = @PTHREAD_LIBS@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
 STRIP = @STRIP@
@@ -299,7 +301,7 @@ AUTOMAKE_OPTIONS = subdir-objects
 ACLOCAL_AMFLAGS = ${ACLOCAL_FLAGS}
 AM_CPPFLAGS = $(DEPS_CFLAGS)
 LIB_CFLAGS = 
-parprouted_LDADD = $(DEPS_LIBS)
+parprouted_LDADD = $(DEPS_LIBS) $(PTHREAD_LIBS)
 parprouted_SOURCES = \
 	src/arp.c \
 	src/parprouted.c \
