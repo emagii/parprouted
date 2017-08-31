@@ -3,12 +3,9 @@
 .deps
 aclocal.m4
 autom4te.cache
-compile
 config.*
 !config.h.in
-depcomp
 Makefile
-missing
 Old
 parprouted
 stamp-h1
