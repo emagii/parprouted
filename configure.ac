@@ -1,5 +1,5 @@
-AC_INIT([parprouted], [7.1], [ulf@emagii.com],
-             [parprouted-7.1], [http://www.emagii.com/])
+AC_INIT([parprouted], [7.2], [ulf@emagii.com],
+             [parprouted-7.2], [http://www.emagii.com/])
 AC_PREREQ([2.59])
 AC_CONFIG_HEADERS([src/include/config.h])
 
