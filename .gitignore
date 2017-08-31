@@ -5,10 +5,9 @@ aclocal.m4
 autom4te.cache
 compile
 config.*
+!config.h.in
 depcomp
-install-sh
 Makefile
-Makefile.in
 missing
 Old
 parprouted
